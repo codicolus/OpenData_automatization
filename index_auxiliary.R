@@ -81,4 +81,3 @@ wind_cont <- function(value, wgth, max){
   
   return((1-std)*wgth)
 }
-
