@@ -5,6 +5,15 @@
 # Date: 08.07.2019
 # Licence: CC-BY-SA
 
+######## General Information ##########
+# This script executes 2 preprocessing tasks:
+#   1) Query of current river + lake measurement data (JSON-file) from the Federal Office of Environment (FOEN)
+#   2) For each feature: Scraping the following parameters:
+#     - time, last measured temperature, mean temperature (24h), max temperature (24h), height of station, catchment-size
+#
+# The script outputs the following files:
+#   1) "flussdaten_updated.json"
+
 # libraries
 library(httr)
 library(XML)
@@ -86,7 +95,7 @@ scrape_metadata <- function(data_table){
 file <- "http://data.geo.admin.ch/ch.bafu.hydroweb-messstationen_temperatur/ch.bafu.hydroweb-messstationen_temperatur_de.json"
 
 # read-in JSON-format
-rivers_json <- fromJSON(file=file, simplify = T)
+rivers_json <- fromJSON(file=file, simplify = T) # TODO: really necessary to simplify?
 river_features <- rivers_json$features
 
 
@@ -136,9 +145,12 @@ for (i in 1:length(river_features)){
   
 }
 
+# replace features with updated ones
+rivers_json$features <- updated_features
+
 # Convert update list to JSON
-updated_features2 <- toJSON(updated_features)
+out_json <- toJSON(rivers_json)
 
 # TODO: could also be other data format
 # write Updated JSON
-write(updated_features, file="data/flussdaten_updated.json")
+write(rivers_json, file="data/flussdaten_updated.json")
