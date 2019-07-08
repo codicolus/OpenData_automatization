@@ -26,7 +26,7 @@ read_station_HTMLtable <- function(url){
   
   # Opening web-page
   station_site <- GET(url)
-  station_site <- htmlParse(station_site, encoding = "UTF-8")
+  station_site <- htmlParse(station_site, encoding = "utf-8")
   station_site <- xmlRoot(station_site)
   
   # Return table
@@ -35,10 +35,18 @@ read_station_HTMLtable <- function(url){
 }
 
 # Scrapes current temperature data from river-station
-scrape_temperature <- function(data_table){
+scrape_time_temperature <- function(data_table){
   
-  # Returns Letzer Messwert, Mittelwert über letzte 24h, Maximum letzte 24h
-  return(as.numeric(as.vector(data_table[1:3, "V4"])))
+  column <- grep("Temper+", unlist(data_table[1,]))
+  
+  # Time
+  time = str_extract(data_table[1,column], "[0-9]+:[0-9]+")
+  
+  # Temperatures
+  temperatures <- as.numeric(as.vector(data_table[2:4, column]))
+  
+  # Returns Time,  Letzer Messwert, Mittelwert über letzte 24h, Maximum letzte 24h
+  return(list(time, temperatures))
 }
 
 # Extracts values from string + turns it into numeric
@@ -50,11 +58,14 @@ get_attributes_as_numeric <- function(string_with_value){
 # Scrapes meta-data from riverstation
 scrape_metadata <- function(data_table){
   
+  row_height <- grep("Stationshöhe", data_table[,1])
+  row_catchment <- grep("Grösse des Einzugsgebietes", data_table[,1])
+  
   # output
   out <- rep(NA, 2)
   
   # Returns Stationshöhe, Grösse des Einzugsgebiets
-  values <- as.vector(data_table[6:7, "V2"])
+  values <- as.vector(data_table[c(row_height, row_catchment), 2])
   
   for (i in 1:2){
     out[i] <-get_attributes_as_numeric(values[i])
@@ -75,7 +86,7 @@ scrape_metadata <- function(data_table){
 file <- "http://data.geo.admin.ch/ch.bafu.hydroweb-messstationen_temperatur/ch.bafu.hydroweb-messstationen_temperatur_de.json"
 
 # read-in JSON-format
-rivers_json <- fromJSON(file=file)
+rivers_json <- fromJSON(file=file, simplify = T)
 river_features <- rivers_json$features
 
 
@@ -86,7 +97,7 @@ updated_features <- list()
 # Loop over all features
 for (i in 1:length(river_features)){
   
-  print(i)
+  #print(i)
   
   # get current feature
   feature <- river_features[[i]]
@@ -97,17 +108,19 @@ for (i in 1:length(river_features)){
   ft_url <- extract_webURL(ft_props$description)
   
   # Get Temperature Values: 1 = current, 2 = mean 24h, 3 = max 24h
-  temperatures <- scrape_temperature(read_station_HTMLtable(ft_url))
+  time_temperatures <- scrape_time_temperature(read_station_HTMLtable(ft_url))
   # Get Metadata: 1 = Stationshöhe (m.ü.M.), 2 = Einzugsgebiet (km^2)
   stat_meta <- scrape_metadata(read_station_HTMLtable(ft_url))
   
   # Add the additional elements to the feature properties
+  # time
+  ft_props$time <- time_temperatures[[1]]
   # Current Temperature
-  ft_props$current <- temperatures[1]
+  ft_props$current <- time_temperatures[[2]][1]
   # Mittlere Temperature 24h
-  ft_props$mittlereT24h <- temperatures[2]
+  ft_props$mittlereT24h <- time_temperatures[[2]][2]
   # Maximale Temperatur 24h
-  ft_props$maxT24h <- temperatures[3]
+  ft_props$maxT24h <- time_temperatures[[2]][3]
   
   # Stationshöhe
   ft_props$statHeight <- stat_meta[1]
@@ -124,7 +137,7 @@ for (i in 1:length(river_features)){
 }
 
 # Convert update list to JSON
-updated_features <- toJSON(updated_features)
+updated_features2 <- toJSON(updated_features)
 
 # TODO: could also be other data format
 # write Updated JSON
