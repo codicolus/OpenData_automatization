@@ -108,10 +108,10 @@ read_meta_correctly <- function(path){
 
 # Separate Lon, Lat values
 # returns matrix with columns: lon, lat
-get_lon_lat <- function(coords_vector){
+get_lon_lat <- function(coords_vector, split_char){
   
   # Split all coordinates
-  splitted <- str_split(coords_vector, "/")
+  splitted <- str_split(coords_vector, split_char)
   
   # Create lon, lat vectors
   lon <- c()
@@ -150,7 +150,7 @@ colnames(ms_data) <- cols_new
 subset_cols <- cols_new[c(1:7, 10)]
 badewetter_subset <- ms_data[, subset_cols]
 
-
+rm("cols_new", "cols_orig")
 ###################################################################################################
 # Section 2: Process Metadata
 
@@ -178,8 +178,8 @@ if(!file.exists(paste(data_path, "weather_metadata.csv", sep = "/"))){
   meta_data <- read_meta_correctly(paste(data_path, "temporary_meta.txt", sep = "/"))
   
   # Tidy coordinates
-  lon_lats <- as.vector(as.matrix((as.data.frame(select(data, Koordinaten)))))
-  lon_lats <- get_lon_lat(lon_lats)
+  lon_lats <- as.vector(as.matrix((as.data.frame(select(meta_data, Koordinaten)))))
+  lon_lats <- get_lon_lat(lon_lats, "/")
   
   # Tidy data
   meta_data <- meta_data %>% select(Station, Name, Höhe) %>%
@@ -192,6 +192,8 @@ if(!file.exists(paste(data_path, "weather_metadata.csv", sep = "/"))){
   # remove temporary file
   file.remove(paste(data_path, "temporary_meta.txt", sep = "/"))
   
+  rm("lon_lats")
+  
 }else{
   meta_data <- read_csv(paste(data_path, "weather_metadata.csv", sep = "/"), locale = locale(encoding = "ISO-8859-1"))
 }
@@ -200,10 +202,14 @@ if(!file.exists(paste(data_path, "weather_metadata.csv", sep = "/"))){
 ###################################################################################################
 # Section 3: Join Measurement-Data + Metadata
 
+# Join data
+joined <- right_join(meta_data, badewetter_subset, by="Station")
 
+# convert to data-frame (columns not tibble compatible)
+joined <- as.data.frame(joined)
 
-
-
+# Write final table as CSV
+write.csv(joined, paste(data_path, "weather_data_joined.csv", sep = "/"), row.names = F, na = "-", fileEncoding = "ISO-8859-1")
 
 
 
