@@ -85,11 +85,15 @@ scrape_metadata <- function(data_table){
 
 ###################################################################################################
 # Section 1: Fetching newest river- data
-# TODO: scrape last measurement value of each river (if it doesn't take too long)
 # TODO: include river-temperatures in the interpolation of the badewetter-index too?
 # -->or just use the actual temperatures as additional conditon which the user could specify on its own
 # --> such that then the bade-index is alterd such that only regions are displayed where also the river/lake temperatures
 # are adequately for bathing
+
+# TODO: create an executable function out of the whole script
+# TODO: if running on Linux: coordination with BASH-Script preferable
+# Outfile
+outpath <- "data"
 
 # url
 file <- "http://data.geo.admin.ch/ch.bafu.hydroweb-messstationen_temperatur/ch.bafu.hydroweb-messstationen_temperatur_de.json"
@@ -104,9 +108,10 @@ updated_features <- list()
 
 # Add Temperature and Metadata-Information for every feature in data-set
 # Loop over all features
+print("Feature data fetching initialised...")
+print(paste("Total features being processed:", length(river_features)))
+
 for (i in 1:length(river_features)){
-  
-  #print(i)
   
   # get current feature
   feature <- river_features[[i]]
@@ -153,4 +158,4 @@ out_json <- toJSON(rivers_json)
 
 # TODO: could also be other data format
 # write Updated JSON
-write(rivers_json, file="data/flussdaten_updated.json")
+write(out_json, file=paste(outpath, "flussdaten_updated.json", sep = "/"))
