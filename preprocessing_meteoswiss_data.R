@@ -210,23 +210,3 @@ joined <- as.data.frame(joined)
 
 # Write final table as CSV
 write.csv(joined, paste(data_path, "weather_data_joined.csv", sep = "/"), row.names = F, na = "-", fileEncoding = "ISO-8859-1")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
