@@ -15,6 +15,11 @@ temp_cont <- function(value, wgth, max){
   #min = 0
   #max = 45
   
+  # check if is NA
+  if(is.na(value)){
+    return(0)
+  }
+  
   if(value < 0){
     value = 0
   }
@@ -27,6 +32,12 @@ temp_cont <- function(value, wgth, max){
 # Precipitation Contribution
 prec_cont <- function(value, wgth){
   # Principle: contribution only when no rain!
+  
+  # check if is NA
+  if(is.na(value)){
+    return(0)
+  }
+  
   if(value > 0){
     return(0)
   }
@@ -39,6 +50,11 @@ sun_cont <- function(value, wgth, max){
   # min = 0
   # max = 10
   
+  # check if is NA
+  if(is.na(value)){
+    return(0)
+  }
+  
   std <- 1 / max * value
   
   return(std*wgth)
@@ -48,6 +64,11 @@ sun_cont <- function(value, wgth, max){
 glob_cont <- function(value, wgth, max){
   #max = 1000
   
+  # check if is NA
+  if(is.na(value)){
+    return(0)
+  }
+  
   std <- 1 / max * value
   
   return(std*wgth)
@@ -55,6 +76,12 @@ glob_cont <- function(value, wgth, max){
 
 # Relative Humidity Contribution
 feu_cont <- function(value, wgth){
+  
+  # check if is NA
+  if(is.na(value)){
+    return(0)
+  }
+  
   max = 100
   
   std <- 1 / max * value
@@ -72,6 +99,11 @@ wind_cont <- function(value, wgth, max){
   # max acceptable wind speed = 25
   # the higher the speed the less less it contributes to the index
   # max = 25
+  
+  # check if is NA
+  if(is.na(value)){
+    return(0)
+  }
   
   if(value > max){
     value = max

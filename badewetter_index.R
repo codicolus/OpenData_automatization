@@ -20,6 +20,7 @@ source("index_auxiliary.R")
 # Section 1: Calculation of the Badewetter-Index
 
 # set-up values
+path = "data"
 # Settings
 # Temperature (degC)
 temp_max <-  45
@@ -40,7 +41,7 @@ wind_wgt <- 0.15
 
 # Read-in data
 # TODO: Correct time to UTC+2 (summer) / UTC+1 (winter)
-joined_data <- read.csv("data/weather_data_joined.csv", na.strings = "-", encoding = "ISO-8859-1", header = T, 
+joined_data <- read.csv(paste(path, "weather_data_joined.csv", sep = "/"), na.strings = "-", encoding = "ISO-8859-1", header = T, 
                         check.names = T)
 
 # get dimensions r-rows, c-cols
@@ -101,10 +102,10 @@ col_names <- colnames(joined_data)
 ###################################################################################################
 # Section 2: WRITING END-PRODUCT FILES FOR USE IN QGIS
 #Write csv
-write.csv(joined_data, "data/badeindex.csv", row.names = F, na = "-", fileEncoding = "ISO-8859-1")
+write.csv(joined_data, paste(path, "badeindex.csv", sep = "/"), row.names = F, na = "-", fileEncoding = "ISO-8859-1")
 
 # defining what variable type each column is (required for reading in QGIS)
 col_type <- c("\"String\", \"String\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\"")
 
-write(col_type, "data/badeindex.csvt", ncolumns = length(cols))
+write(col_type, paste(path, "badeindex.csvt", sep = "/"), ncolumns = length(cols))
 
