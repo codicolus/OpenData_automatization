@@ -19,9 +19,11 @@ source("index_auxiliary.R")
 ###################################################################################################
 # Section 1: Calculation of the Badewetter-Index
 
+# SETTINGS
 # set-up values
 path = "data"
-# Settings
+
+# Setting Max-values + weights for calculation
 # Temperature (degC)
 temp_max <-  45
 temp_wgt <-  0.4
@@ -68,7 +70,7 @@ for(i in 1:r){
   # TODO: could be changed as index will get lower when variables are missing
   # BUT ATTENTION: index should not be calculated when crucial variable like temperature or precipitation is missing
   # TODO: would have to be adjusted also in auxiliary functions --> condition for when value is NA
-  if(!(is.na(temp) || is.na(prec) ||is.na(sun) ||is.na(glob) ||is.na(feu) ||is.na(wind))){
+  if(!(is.na(temp) || is.na(prec))){
     
     #index[i] <- 0.4*temp + 0.2*prec + 0.05*sun + 0.05*glob + 0.15*feu + 0.15*wind
     
@@ -89,7 +91,7 @@ mini <- temp_cont(-10, temp_wgt, temp_max) + prec_cont(1, prec_wgt) + sun_cont(0
 (mini*100)
 
 # Standardization
-# index <- 1/maxi*index
+index <- 1/maxi*index
 
 # Scale Index up + add to data
 index <- as.integer(index*100)
@@ -104,8 +106,12 @@ col_names <- colnames(joined_data)
 #Write csv
 write.csv(joined_data, paste(path, "badeindex.csv", sep = "/"), row.names = F, na = "-", fileEncoding = "ISO-8859-1")
 
-# defining what variable type each column is (required for reading in QGIS)
-col_type <- c("\"String\", \"String\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\"")
+# Write csvt-file with type of each column (required for reading table in QGIS)
+if(!file.exists(paste(path, "badeindex.csvt", sep = "/"))){
+  
+  col_type <- c("\"String\", \"String\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\"")
+  write(col_type, paste(path, "badeindex.csvt", sep = "/"), ncolumns = length(cols))
+  
+}
 
-write(col_type, paste(path, "badeindex.csvt", sep = "/"), ncolumns = length(cols))
 
