@@ -106,26 +106,6 @@ read_meta_correctly <- function(path){
   return(data)
 }
 
-# Separate Lon, Lat values
-# returns matrix with columns: lon, lat
-get_lon_lat <- function(coords_vector, split_char){
-  
-  # Split all coordinates
-  splitted <- str_split(coords_vector, split_char)
-  
-  # Create lon, lat vectors
-  lon <- c()
-  lat <- c()
-  
-  for (i in 1:length(splitted)){
-    lon <- c(lon, splitted[[i]][1])
-    lat <- c(lat, splitted[[i]][2])
-  }
-  
-  return(cbind(lon, lat))
-  
-}
-
 ###################################################################################################
 # Section 1: Fetch newest measurements of the automated weather stations of MeteoSwiss + prepare for join
 
@@ -177,14 +157,11 @@ if(!file.exists(paste(data_path, "weather_metadata.csv", sep = "/"))){
   # Read-in temporary-file
   meta_data <- read_meta_correctly(paste(data_path, "temporary_meta.txt", sep = "/"))
   
-  # Tidy coordinates
-  lon_lats <- as.vector(as.matrix((as.data.frame(select(meta_data, Koordinaten)))))
-  lon_lats <- get_lon_lat(lon_lats, "/")
-  
   # Tidy data
-  meta_data <- meta_data %>% select(Station, Name, Höhe) %>%
-    mutate(Longitude = as.numeric(lon_lats[1]),
-           Latitude = as.numeric(lon_lats[2]))
+  meta_data <- meta_data %>% select(Station, Name, Koordinaten, Höhe) %>%
+    mutate(Longitude = as.numeric(str_split(Koordinaten, "/")[[1]][1]),
+           Latitude = as.numeric(str_split(Koordinaten, "/")[[1]][2])) %>%
+      select(-Koordinaten)
   
   # write processed meta-data
   write.csv(meta_data, paste(data_path, "weather_metadata.csv", sep = "/"), row.names = F, fileEncoding = "ISO-8859-1")
