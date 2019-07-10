@@ -43,7 +43,7 @@ wind_wgt <- 0.15
 
 # Read-in data
 # TODO: Correct time to UTC+2 (summer) / UTC+1 (winter)
-joined_data <- read.csv(paste(path, "weather_data_joined.csv", sep = "/"), na.strings = "-", encoding = "ISO-8859-1", header = T, 
+joined_data <- read.csv(paste(path, "meteoswiss_data/weatherdata_joined.csv", sep = "/"), na.strings = "-", encoding = "ISO-8859-1", header = T, 
                         check.names = T)
 
 # get dimensions r-rows, c-cols
@@ -66,10 +66,7 @@ for(i in 1:r){
   feu <- as.numeric(joined_data[i,grep("Luftfeu+", col_names)])
   wind <- as.numeric(joined_data[i,grep("Windgesch+", col_names)])
   
-  # Index is currently only calculated if all required variables are available
-  # TODO: could be changed as index will get lower when variables are missing
-  # BUT ATTENTION: index should not be calculated when crucial variable like temperature or precipitation is missing
-  # TODO: would have to be adjusted also in auxiliary functions --> condition for when value is NA
+  # Index is only calculated if two most important variables (temperature + precipitation) are available
   if(!(is.na(temp) || is.na(prec))){
     
     #index[i] <- 0.4*temp + 0.2*prec + 0.05*sun + 0.05*glob + 0.15*feu + 0.15*wind
@@ -103,14 +100,18 @@ col_names <- colnames(joined_data)
 
 ###################################################################################################
 # Section 2: WRITING END-PRODUCT FILES FOR USE IN QGIS
+
+# Create directory
+dir.create(paste(path, "index", sep="/"), showWarnings = F)
+
 #Write csv
-write.csv(joined_data, paste(path, "badeindex.csv", sep = "/"), row.names = F, na = "-", fileEncoding = "ISO-8859-1")
+write.csv(joined_data, paste(path, "index/badeindex.csv", sep = "/"), row.names = F, na = "-", fileEncoding = "ISO-8859-1")
 
 # Write csvt-file with type of each column (required for reading table in QGIS)
-if(!file.exists(paste(path, "badeindex.csvt", sep = "/"))){
+if(!file.exists(paste(path, "index/badeindex.csvt", sep = "/"))){
   
   col_type <- c("\"String\", \"String\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\", \"Real\"")
-  write(col_type, paste(path, "badeindex.csvt", sep = "/"), ncolumns = length(cols))
+  write(col_type, paste(path, "index/badeindex.csvt", sep = "/"), ncolumns = length(col_names))
   
 }
 

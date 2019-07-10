@@ -93,7 +93,7 @@ scrape_metadata <- function(data_table){
 # TODO: create an executable function out of the whole script
 # TODO: if running on Linux: coordination with BASH-Script preferable
 # Outfile
-outpath <- "data"
+path <- "data"
 
 # url
 file <- "http://data.geo.admin.ch/ch.bafu.hydroweb-messstationen_temperatur/ch.bafu.hydroweb-messstationen_temperatur_de.json"
@@ -157,5 +157,9 @@ rivers_json$features <- updated_features
 out_json <- toJSON(rivers_json)
 
 # TODO: could also be other data format
+
+# Create directory
+dir.create(paste(path, "riverdata", sep="/"), showWarnings = F)
+
 # write Updated JSON
-write(out_json, file=paste(outpath, "flussdaten_updated.json", sep = "/"))
+write(out_json, file=paste(path, "riverdata/flussdaten_updated.json", sep = "/"))

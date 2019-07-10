@@ -24,11 +24,14 @@ library(bit64)
 
 # Pathes
 # data folder (destination folder)
-data_path <- "data"
+path <- "data"
 # Measurements
 measurements_path <- "https://data.geo.admin.ch/ch.meteoschweiz.messwerte-aktuell/VQHA80.csv"
 # meta_path <- "data/metadata_wetterstationen.txt"
 meta_path <- "https://data.geo.admin.ch/ch.meteoschweiz.messwerte-aktuell/info/VQHA80_de.txt"
+
+# Create directory
+dir.create(paste(path, "meteoswiss_data", sep="/"), showWarnings = F)
 
 ###################################################################################################
 # Section 0: Auxiliary Functions
@@ -136,7 +139,7 @@ rm("cols_new", "cols_orig")
 
 # FETCH METADATA + PROCESS (if necessary)
 # Check if file already exists
-if(!file.exists(paste(data_path, "weather_metadata.csv", sep = "/"))){
+if(!file.exists(paste(path, "meteoswiss_data/weather_metadata.csv", sep = "/"))){
   
   print("Metadata-File fetching and processing initialised...")
   
@@ -151,11 +154,11 @@ if(!file.exists(paste(data_path, "weather_metadata.csv", sep = "/"))){
   lines <- get_cleaned_subset(lines, start_line, end_line)
   
   # Temporary file-storage
-  write(lines, paste(data_path, "temporary_meta.txt", sep = "/"))
+  write(lines, paste(path, "meteoswiss_data/temporary_meta.txt", sep = "/"))
   rm("lines", "start_line", "expected_lines", "end_line")
   
   # Read-in temporary-file
-  meta_data <- read_meta_correctly(paste(data_path, "temporary_meta.txt", sep = "/"))
+  meta_data <- read_meta_correctly(paste(path, "meteoswiss_data/temporary_meta.txt", sep = "/"))
   
   # Tidy data
   meta_data <- meta_data %>% select(Station, Name, Koordinaten, Höhe) %>%
@@ -164,15 +167,15 @@ if(!file.exists(paste(data_path, "weather_metadata.csv", sep = "/"))){
       select(-Koordinaten)
   
   # write processed meta-data
-  write.csv(meta_data, paste(data_path, "weather_metadata.csv", sep = "/"), row.names = F, fileEncoding = "ISO-8859-1")
+  write.csv(meta_data, paste(path, "meteoswiss_data/weather_metadata.csv", sep = "/"), row.names = F, fileEncoding = "ISO-8859-1")
   
   # remove temporary file
-  file.remove(paste(data_path, "temporary_meta.txt", sep = "/"))
+  file.remove(paste(path, "meteoswiss_data/temporary_meta.txt", sep = "/"))
   
   rm("lon_lats")
   
 }else{
-  meta_data <- read_csv(paste(data_path, "weather_metadata.csv", sep = "/"), locale = locale(encoding = "ISO-8859-1"))
+  meta_data <- read_csv(paste(path, "meteoswiss_data/weather_metadata.csv", sep = "/"), locale = locale(encoding = "ISO-8859-1"))
 }
 
 
@@ -186,4 +189,4 @@ joined <- right_join(meta_data, badewetter_subset, by="Station")
 joined <- as.data.frame(joined)
 
 # Write final table as CSV
-write.csv(joined, paste(data_path, "weather_data_joined.csv", sep = "/"), row.names = F, na = "-", fileEncoding = "ISO-8859-1")
+write.csv(joined, paste(path, "meteoswiss_data/weatherdata_joined.csv", sep = "/"), row.names = F, na = "-", fileEncoding = "ISO-8859-1")
