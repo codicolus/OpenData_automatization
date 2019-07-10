@@ -1,4 +1,12 @@
-# badewetter-index raster generation
+# This script processes the raster-interpolation of the Badewetter-Index Schweiz (swiss beach-weather-index)
+# The interpolation used is a simple inverse distance weighting algorithm (IDW)
+# The beach-weather-index is calculated at all automated weather stations of the
+# Federal Office of Climatology and Meteorology (MeteoSwiss)
+# Raster-Interpolation of the Badewetter-Index Schweiz
+# The application can be found at: https://badewetter-index-schweiz.opendata.iwi.unibe.ch/
+# Created by: Christoph von Matt
+# Date: 10.07.2019
+# Licence: CC-BY-SA
 
 ###################################################################################################
 # Section 0: Auxiliary Functions

@@ -115,4 +115,5 @@ if(!file.exists(paste(path, "index/badeindex.csvt", sep = "/"))){
   
 }
 
+rm(list=ls())
 

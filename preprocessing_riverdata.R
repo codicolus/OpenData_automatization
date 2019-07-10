@@ -163,3 +163,5 @@ dir.create(paste(path, "riverdata", sep="/"), showWarnings = F)
 
 # write Updated JSON
 write(out_json, file=paste(path, "riverdata/flussdaten_updated.json", sep = "/"))
+
+rm(list=ls())
