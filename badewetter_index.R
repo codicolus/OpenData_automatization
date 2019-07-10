@@ -101,6 +101,8 @@ col_names <- colnames(joined_data)
 ###################################################################################################
 # Section 2: WRITING END-PRODUCT FILES FOR USE IN QGIS
 
+# TODO: convert to GEOJSON here!?
+
 # Create directory
 dir.create(paste(path, "index", sep="/"), showWarnings = F)
 

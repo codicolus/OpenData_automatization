@@ -8,6 +8,10 @@
 # Date: 10.07.2019
 # Licence: CC-BY-SA
 
+#libraries
+library(rjson)
+library(leafletR)
+
 ###################################################################################################
 # Section 0: Auxiliary Functions
 
@@ -63,4 +67,4 @@ index_subset <- badeindex_data[,indizes]
 
 # Convert file to GeoJSON  
 lat_lon <- get_indizes(c("Latitude", "Longitude"))
-toGeoJSON(badeindex_data, "badewetter.geojson", path, lat.lon = lat_lon, overwrite = T)
+toGeoJSON(badeindex_data, "badewetter", path, lat.lon = lat_lon, overwrite = T)

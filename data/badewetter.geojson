@@ -1,0 +1,3185 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "TAE",
+        "Name": "Aadorf / Tänikon",
+        "Höhe": "539",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "13.9",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "10",
+        "Luftfeuchtigkeit....": "78",
+        "Windgeschwindigkeit..km.h.": "3.2",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "COM",
+        "Name": "Acquarossa / Comprovasco",
+        "Höhe": "575",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "21.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "5",
+        "Luftfeuchtigkeit....": "35",
+        "Windgeschwindigkeit..km.h.": "11.5",
+        "Index": "53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ABO",
+        "Name": "Adelboden",
+        "Höhe": "1322",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "13.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "76",
+        "Windgeschwindigkeit..km.h.": "1.8",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "AIG",
+        "Name": "Aigle",
+        "Höhe": "381",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "21.4",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "9",
+        "Luftfeuchtigkeit....": "41",
+        "Windgeschwindigkeit..km.h.": "4.7",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ALT",
+        "Name": "Altdorf",
+        "Höhe": "438",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "71",
+        "Windgeschwindigkeit..km.h.": "2.2",
+        "Index": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ARH",
+        "Name": "Altenrhein",
+        "Höhe": "398",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "0",
+        "Luftfeuchtigkeit....": "61",
+        "Windgeschwindigkeit..km.h.": "5",
+        "Index": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "AND",
+        "Name": "Andeer",
+        "Höhe": "987",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "4",
+        "Luftfeuchtigkeit....": "70",
+        "Windgeschwindigkeit..km.h.": "2.2",
+        "Index": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ANT",
+        "Name": "Andermatt",
+        "Höhe": "1438",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "12.4",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "3",
+        "Luftfeuchtigkeit....": "70",
+        "Windgeschwindigkeit..km.h.": "13.7",
+        "Index": "49"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ARO",
+        "Name": "Arosa",
+        "Höhe": "1878",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "9",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "77",
+        "Windgeschwindigkeit..km.h.": "7.9",
+        "Index": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "RAG",
+        "Name": "Bad Ragaz",
+        "Höhe": "496",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.7",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "0",
+        "Luftfeuchtigkeit....": "49",
+        "Windgeschwindigkeit..km.h.": "10.8",
+        "Index": "53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BAN",
+        "Name": "Bantiger",
+        "Höhe": "941",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "NA",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "15",
+        "Luftfeuchtigkeit....": "NA",
+        "Windgeschwindigkeit..km.h.": "NA",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BAS",
+        "Name": "Basel / Binningen",
+        "Höhe": "316",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "21.7",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "37",
+        "Windgeschwindigkeit..km.h.": "4.3",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "LAT",
+        "Name": "Bergün / Latsch",
+        "Höhe": "1407",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "13.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "66",
+        "Windgeschwindigkeit..km.h.": "5",
+        "Index": "54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BER",
+        "Name": "Bern / Zollikofen",
+        "Höhe": "552",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "13",
+        "Luftfeuchtigkeit....": "52",
+        "Windgeschwindigkeit..km.h.": "6.1",
+        "Index": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BEZ",
+        "Name": "Beznau",
+        "Höhe": "325",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "19.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "51",
+        "Windgeschwindigkeit..km.h.": "2.2",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BIA",
+        "Name": "Biasca",
+        "Höhe": "278",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "23.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "34",
+        "Windgeschwindigkeit..km.h.": "10.1",
+        "Index": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BIN",
+        "Name": "Binn",
+        "Höhe": "1479",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.7",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "60",
+        "Windgeschwindigkeit..km.h.": "4.3",
+        "Index": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BIZ",
+        "Name": "Bischofszell",
+        "Höhe": "470",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "12",
+        "Luftfeuchtigkeit....": "71",
+        "Windgeschwindigkeit..km.h.": "2.2",
+        "Index": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BIV",
+        "Name": "Bivio",
+        "Höhe": "1856",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "8.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "76",
+        "Windgeschwindigkeit..km.h.": "5",
+        "Index": "52"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BIE",
+        "Name": "Bière",
+        "Höhe": "683",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "10",
+        "Luftfeuchtigkeit....": "54",
+        "Windgeschwindigkeit..km.h.": "5.8",
+        "Index": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BLA",
+        "Name": "Blatten, Lötschental",
+        "Höhe": "1538",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "12.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "10",
+        "Luftfeuchtigkeit....": "71",
+        "Windgeschwindigkeit..km.h.": "4.7",
+        "Index": "54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BOL",
+        "Name": "Boltigen",
+        "Höhe": "820",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.7",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "13",
+        "Luftfeuchtigkeit....": "71",
+        "Windgeschwindigkeit..km.h.": "3.2",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BOU",
+        "Name": "Bouveret",
+        "Höhe": "374",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "23.7",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "41",
+        "Windgeschwindigkeit..km.h.": "15.8",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BRZ",
+        "Name": "Brienz",
+        "Höhe": "567",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "NA",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "NA",
+        "Windgeschwindigkeit..km.h.": "11.9",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BUS",
+        "Name": "Buchs / Aarau",
+        "Höhe": "386",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "20",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "45",
+        "Windgeschwindigkeit..km.h.": "3.6",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BUF",
+        "Name": "Buffalora",
+        "Höhe": "1968",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "9.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "43",
+        "Windgeschwindigkeit..km.h.": "2.5",
+        "Index": "49"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "FRE",
+        "Name": "Bullet / La Frétaz",
+        "Höhe": "1205",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "13",
+        "Luftfeuchtigkeit....": "58",
+        "Windgeschwindigkeit..km.h.": "6.1",
+        "Index": "53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CEV",
+        "Name": "Cevio",
+        "Höhe": "417",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "22.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "64",
+        "Windgeschwindigkeit..km.h.": "7.6",
+        "Index": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CHZ",
+        "Name": "Cham",
+        "Höhe": "442",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "19.9",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "3",
+        "Luftfeuchtigkeit....": "43",
+        "Windgeschwindigkeit..km.h.": "5",
+        "Index": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CHA",
+        "Name": "Chasseral",
+        "Höhe": "1599",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "10.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "44",
+        "Windgeschwindigkeit..km.h.": "24.8",
+        "Index": "36"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CHM",
+        "Name": "Chaumont",
+        "Höhe": "1136",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.4",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "3",
+        "Luftfeuchtigkeit....": "52",
+        "Windgeschwindigkeit..km.h.": "5",
+        "Index": "53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CHU",
+        "Name": "Chur",
+        "Höhe": "556",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "9",
+        "Luftfeuchtigkeit....": "54",
+        "Windgeschwindigkeit..km.h.": "13.7",
+        "Index": "52"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CHD",
+        "Name": "Château-d'Oex",
+        "Höhe": "1028",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "15.2",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "12",
+        "Luftfeuchtigkeit....": "70",
+        "Windgeschwindigkeit..km.h.": "6.1",
+        "Index": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CIM",
+        "Name": "Cimetta",
+        "Höhe": "1661",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "12.9",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "4",
+        "Luftfeuchtigkeit....": "97",
+        "Windgeschwindigkeit..km.h.": "17.3",
+        "Index": "44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CDM",
+        "Name": "Col des Mosses",
+        "Höhe": "1412",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "12.7",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "74",
+        "Windgeschwindigkeit..km.h.": "7.2",
+        "Index": "53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GSB",
+        "Name": "Col du Grand St-Bernard",
+        "Höhe": "2472",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "7.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "78",
+        "Windgeschwindigkeit..km.h.": "18.7",
+        "Index": "42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "COY",
+        "Name": "Courtelary",
+        "Höhe": "695",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.7",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "70",
+        "Windgeschwindigkeit..km.h.": "2.5",
+        "Index": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CMA",
+        "Name": "Crap Masegn",
+        "Höhe": "2480",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "5.5",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "65",
+        "Windgeschwindigkeit..km.h.": "20.9",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CRM",
+        "Name": "Cressier",
+        "Höhe": "430",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "19.4",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "46",
+        "Windgeschwindigkeit..km.h.": "8.6",
+        "Index": "54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "DAV",
+        "Name": "Davos",
+        "Höhe": "1594",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "11.4",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "4",
+        "Luftfeuchtigkeit....": "65",
+        "Windgeschwindigkeit..km.h.": "13.7",
+        "Index": "47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "DEM",
+        "Name": "Delémont",
+        "Höhe": "439",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "15",
+        "Luftfeuchtigkeit....": "62",
+        "Windgeschwindigkeit..km.h.": "5.4",
+        "Index": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "DIS",
+        "Name": "Disentis",
+        "Höhe": "1197",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "15.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "58",
+        "Windgeschwindigkeit..km.h.": "8.6",
+        "Index": "53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "EBK",
+        "Name": "Ebnat-Kappel",
+        "Höhe": "623",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "15.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "9",
+        "Luftfeuchtigkeit....": "68",
+        "Windgeschwindigkeit..km.h.": "0.4",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "EGH",
+        "Name": "Eggishorn",
+        "Höhe": "2893",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "7.2",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "5",
+        "Luftfeuchtigkeit....": "70",
+        "Windgeschwindigkeit..km.h.": "10.1",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "EGO",
+        "Name": "Egolzwil",
+        "Höhe": "521",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "20",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "10",
+        "Luftfeuchtigkeit....": "40",
+        "Windgeschwindigkeit..km.h.": "2.9",
+        "Index": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "EIN",
+        "Name": "Einsiedeln",
+        "Höhe": "910",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "NA",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "NA",
+        "Windgeschwindigkeit..km.h.": "NA",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ELM",
+        "Name": "Elm",
+        "Höhe": "957",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "13.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "3",
+        "Luftfeuchtigkeit....": "82",
+        "Windgeschwindigkeit..km.h.": "1.4",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ENG",
+        "Name": "Engelberg",
+        "Höhe": "1035",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "74",
+        "Windgeschwindigkeit..km.h.": "2.2",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "EVI",
+        "Name": "Evionnaz",
+        "Höhe": "482",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "22",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "37",
+        "Windgeschwindigkeit..km.h.": "15.8",
+        "Index": "51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "EVO",
+        "Name": "Evolène / Villa",
+        "Höhe": "1825",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "12.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "12",
+        "Luftfeuchtigkeit....": "68",
+        "Windgeschwindigkeit..km.h.": "3.2",
+        "Index": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "FAH",
+        "Name": "Fahy",
+        "Höhe": "596",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "18",
+        "Luftfeuchtigkeit....": "56",
+        "Windgeschwindigkeit..km.h.": "5",
+        "Index": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "FLU",
+        "Name": "Flühli, LU",
+        "Höhe": "939",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "71",
+        "Windgeschwindigkeit..km.h.": "4.7",
+        "Index": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GRA",
+        "Name": "Fribourg / Posieux",
+        "Höhe": "650",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "19.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "17",
+        "Luftfeuchtigkeit....": "40",
+        "Windgeschwindigkeit..km.h.": "12.6",
+        "Index": "51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "FRU",
+        "Name": "Frutigen",
+        "Höhe": "756",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "15.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "75",
+        "Windgeschwindigkeit..km.h.": "3.2",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GVE",
+        "Name": "Genève / Cointrin",
+        "Höhe": "410",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "21.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "10",
+        "Luftfeuchtigkeit....": "52",
+        "Windgeschwindigkeit..km.h.": "5.8",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GES",
+        "Name": "Gersau",
+        "Höhe": "521",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "65",
+        "Windgeschwindigkeit..km.h.": "13.7",
+        "Index": "52"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GIH",
+        "Name": "Giswil",
+        "Höhe": "471",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "79",
+        "Windgeschwindigkeit..km.h.": "1.1",
+        "Index": "62"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GLA",
+        "Name": "Glarus",
+        "Höhe": "516",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "8",
+        "Luftfeuchtigkeit....": "61",
+        "Windgeschwindigkeit..km.h.": "1.4",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GOR",
+        "Name": "Gornergrat",
+        "Höhe": "3129",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "5.1",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "66",
+        "Windgeschwindigkeit..km.h.": "6.5",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GRE",
+        "Name": "Grenchen",
+        "Höhe": "427",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "20.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "42",
+        "Windgeschwindigkeit..km.h.": "9",
+        "Index": "54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GRH",
+        "Name": "Grimsel Hospiz",
+        "Höhe": "1980",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "9",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "0",
+        "Luftfeuchtigkeit....": "90",
+        "Windgeschwindigkeit..km.h.": "17.6",
+        "Index": "46"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GRO",
+        "Name": "Grono",
+        "Höhe": "323",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "20.2",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "5",
+        "Luftfeuchtigkeit....": "72",
+        "Windgeschwindigkeit..km.h.": "2.2",
+        "Index": "63"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GRC",
+        "Name": "Grächen",
+        "Höhe": "1605",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "1",
+        "Luftfeuchtigkeit....": "44",
+        "Windgeschwindigkeit..km.h.": "NA",
+        "Index": "42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GOS",
+        "Name": "Göschenen",
+        "Höhe": "950",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "72",
+        "Windgeschwindigkeit..km.h.": "5",
+        "Index": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GOE",
+        "Name": "Gösgen",
+        "Höhe": "380",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "20.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "13",
+        "Luftfeuchtigkeit....": "44",
+        "Windgeschwindigkeit..km.h.": "1.8",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GUE",
+        "Name": "Gütsch, Andermatt",
+        "Höhe": "2283",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "6.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "5",
+        "Luftfeuchtigkeit....": "95",
+        "Windgeschwindigkeit..km.h.": "16.6",
+        "Index": "38"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GUT",
+        "Name": "Güttingen",
+        "Höhe": "440",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "15.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "64",
+        "Windgeschwindigkeit..km.h.": "8.6",
+        "Index": "54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "HLL",
+        "Name": "Hallau",
+        "Höhe": "419",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "65",
+        "Windgeschwindigkeit..km.h.": "6.5",
+        "Index": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "HOE",
+        "Name": "Hörnli",
+        "Höhe": "1144",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "13.9",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "55",
+        "Windgeschwindigkeit..km.h.": "7.6",
+        "Index": "51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ILZ",
+        "Name": "Ilanz",
+        "Höhe": "698",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "54",
+        "Windgeschwindigkeit..km.h.": "NA",
+        "Index": "45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "INT",
+        "Name": "Interlaken",
+        "Höhe": "577",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "19.4",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "60",
+        "Windgeschwindigkeit..km.h.": "10.8",
+        "Index": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "JUN",
+        "Name": "Jungfraujoch",
+        "Höhe": "3580",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "-0.7",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "84",
+        "Windgeschwindigkeit..km.h.": "24.1",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "KOP",
+        "Name": "Koppigen",
+        "Höhe": "485",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "54",
+        "Windgeschwindigkeit..km.h.": "2.9",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BRL",
+        "Name": "La Brévine",
+        "Höhe": "1050",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "13",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "55",
+        "Windgeschwindigkeit..km.h.": "7.6",
+        "Index": "51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CDF",
+        "Name": "La Chaux-de-Fonds",
+        "Höhe": "1017",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "41",
+        "Windgeschwindigkeit..km.h.": "4.7",
+        "Index": "52"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "DOL",
+        "Name": "La Dôle",
+        "Höhe": "1669",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "11.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "14",
+        "Luftfeuchtigkeit....": "55",
+        "Windgeschwindigkeit..km.h.": "14.4",
+        "Index": "45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "LAC",
+        "Name": "Lachen / Galgenen",
+        "Höhe": "468",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "49",
+        "Windgeschwindigkeit..km.h.": "NA",
+        "Index": "44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "LAG",
+        "Name": "Langnau i.E.",
+        "Höhe": "743",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "9",
+        "Luftfeuchtigkeit....": "63",
+        "Windgeschwindigkeit..km.h.": "2.5",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MLS",
+        "Name": "Le Moléson",
+        "Höhe": "1974",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "10.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "12",
+        "Luftfeuchtigkeit....": "68",
+        "Windgeschwindigkeit..km.h.": "6.1",
+        "Index": "51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "LEI",
+        "Name": "Leibstadt",
+        "Höhe": "341",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.7",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "15",
+        "Luftfeuchtigkeit....": "59",
+        "Windgeschwindigkeit..km.h.": "3.6",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ATT",
+        "Name": "Les Attelas",
+        "Höhe": "2735",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "6.4",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "10",
+        "Luftfeuchtigkeit....": "85",
+        "Windgeschwindigkeit..km.h.": "7.6",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CHB",
+        "Name": "Les Charbonnières",
+        "Höhe": "1045",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "15.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "61",
+        "Windgeschwindigkeit..km.h.": "10.8",
+        "Index": "52"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "DIA",
+        "Name": "Les Diablerets",
+        "Höhe": "2964",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "5.5",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "61",
+        "Windgeschwindigkeit..km.h.": "10.1",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MAR",
+        "Name": "Les Marécottes",
+        "Höhe": "990",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "15.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "76",
+        "Windgeschwindigkeit..km.h.": "4",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "OTL",
+        "Name": "Locarno / Monti",
+        "Höhe": "366",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "24.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "6",
+        "Globalstrahlung..W.m.2.": "2",
+        "Luftfeuchtigkeit....": "57",
+        "Windgeschwindigkeit..km.h.": "10.1",
+        "Index": "63"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "LUG",
+        "Name": "Lugano",
+        "Höhe": "273",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "25.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "5",
+        "Luftfeuchtigkeit....": "58",
+        "Windgeschwindigkeit..km.h.": "9",
+        "Index": "61"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "LUZ",
+        "Name": "Luzern",
+        "Höhe": "454",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "19.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "8",
+        "Luftfeuchtigkeit....": "47",
+        "Windgeschwindigkeit..km.h.": "9",
+        "Index": "54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "LAE",
+        "Name": "Lägern",
+        "Höhe": "845",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17.8",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "12",
+        "Luftfeuchtigkeit....": "36",
+        "Windgeschwindigkeit..km.h.": "10.1",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MAG",
+        "Name": "Magadino / Cadenazzo",
+        "Höhe": "203",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "25.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "4",
+        "Luftfeuchtigkeit....": "55",
+        "Windgeschwindigkeit..km.h.": "9.4",
+        "Index": "61"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MAS",
+        "Name": "Marsens",
+        "Höhe": "714",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "45",
+        "Windgeschwindigkeit..km.h.": "13.3",
+        "Index": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MAH",
+        "Name": "Mathod",
+        "Höhe": "437",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "19.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "14",
+        "Luftfeuchtigkeit....": "60",
+        "Windgeschwindigkeit..km.h.": "7.9",
+        "Index": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MTR",
+        "Name": "Matro",
+        "Höhe": "2171",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "10.5",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "3",
+        "Luftfeuchtigkeit....": "43",
+        "Windgeschwindigkeit..km.h.": "27",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MER",
+        "Name": "Meiringen",
+        "Höhe": "588",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "9",
+        "Luftfeuchtigkeit....": "59",
+        "Windgeschwindigkeit..km.h.": "2.9",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MOB",
+        "Name": "Montagnier, Bagnes",
+        "Höhe": "839",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "69",
+        "Windgeschwindigkeit..km.h.": "1.8",
+        "Index": "60"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MVE",
+        "Name": "Montana",
+        "Höhe": "1427",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "10",
+        "Luftfeuchtigkeit....": "50",
+        "Windgeschwindigkeit..km.h.": "6.8",
+        "Index": "54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "GEN",
+        "Name": "Monte Generoso",
+        "Höhe": "1600",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "13.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "2",
+        "Luftfeuchtigkeit....": "95",
+        "Windgeschwindigkeit..km.h.": "9.4",
+        "Index": "49"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MRP",
+        "Name": "Monte Rosa-Plattje",
+        "Höhe": "2885",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "8.2",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "12",
+        "Luftfeuchtigkeit....": "57",
+        "Windgeschwindigkeit..km.h.": "6.5",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MOA",
+        "Name": "Mosen",
+        "Höhe": "453",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "53",
+        "Windgeschwindigkeit..km.h.": "2.9",
+        "Index": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MTE",
+        "Name": "Mottec",
+        "Höhe": "1580",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "12.7",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "8",
+        "Luftfeuchtigkeit....": "74",
+        "Windgeschwindigkeit..km.h.": "5",
+        "Index": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MOE",
+        "Name": "Möhlin",
+        "Höhe": "343",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "19",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "8",
+        "Luftfeuchtigkeit....": "56",
+        "Windgeschwindigkeit..km.h.": "2.5",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MUB",
+        "Name": "Mühleberg",
+        "Höhe": "479",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "12",
+        "Luftfeuchtigkeit....": "60",
+        "Windgeschwindigkeit..km.h.": "4",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "MSK",
+        "Name": "Mühleberg / Stockeren",
+        "Höhe": "775",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "NA",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "17",
+        "Luftfeuchtigkeit....": "NA",
+        "Windgeschwindigkeit..km.h.": "NA",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "NAS",
+        "Name": "Naluns / Schlivera",
+        "Höhe": "2380",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "6.4",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "0",
+        "Luftfeuchtigkeit....": "62",
+        "Windgeschwindigkeit..km.h.": "17.6",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "NAP",
+        "Name": "Napf",
+        "Höhe": "1403",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "11.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "9",
+        "Luftfeuchtigkeit....": "58",
+        "Windgeschwindigkeit..km.h.": "5.8",
+        "Index": "51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "NEU",
+        "Name": "Neuchâtel",
+        "Höhe": "485",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "20.9",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "8",
+        "Luftfeuchtigkeit....": "36",
+        "Windgeschwindigkeit..km.h.": "13.7",
+        "Index": "51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "CGI",
+        "Name": "Nyon / Changins",
+        "Höhe": "455",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "21",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "10",
+        "Luftfeuchtigkeit....": "49",
+        "Windgeschwindigkeit..km.h.": "9",
+        "Index": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "OBR",
+        "Name": "Oberriet / Kriessern",
+        "Höhe": "409",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "60",
+        "Windgeschwindigkeit..km.h.": "3.6",
+        "Index": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "AEG",
+        "Name": "Oberägeri",
+        "Höhe": "724",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "NA",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "NA",
+        "Windgeschwindigkeit..km.h.": "4.7",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ORO",
+        "Name": "Oron",
+        "Höhe": "828",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.9",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "4",
+        "Luftfeuchtigkeit....": "49",
+        "Windgeschwindigkeit..km.h.": "18.7",
+        "Index": "46"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "BEH",
+        "Name": "Passo del Bernina",
+        "Höhe": "2260",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "9.2",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "9",
+        "Luftfeuchtigkeit....": "45",
+        "Windgeschwindigkeit..km.h.": "31.3",
+        "Index": "35"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "PAY",
+        "Name": "Payerne",
+        "Höhe": "490",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "19.7",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "9",
+        "Luftfeuchtigkeit....": "46",
+        "Windgeschwindigkeit..km.h.": "5.4",
+        "Index": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "PIL",
+        "Name": "Pilatus",
+        "Höhe": "2106",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "8.2",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "8",
+        "Luftfeuchtigkeit....": "84",
+        "Windgeschwindigkeit..km.h.": "10.1",
+        "Index": "49"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "PIO",
+        "Name": "Piotta",
+        "Höhe": "990",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "48",
+        "Windgeschwindigkeit..km.h.": "19.1",
+        "Index": "48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "COV",
+        "Name": "Piz Corvatsch",
+        "Höhe": "3302",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "2.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "3",
+        "Globalstrahlung..W.m.2.": "5",
+        "Luftfeuchtigkeit....": "54",
+        "Windgeschwindigkeit..km.h.": "14.4",
+        "Index": "38"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "PMA",
+        "Name": "Piz Martegnas",
+        "Höhe": "2670",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "4.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "3",
+        "Luftfeuchtigkeit....": "56",
+        "Windgeschwindigkeit..km.h.": "15.8",
+        "Index": "38"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "PLF",
+        "Name": "Plaffeien",
+        "Höhe": "1042",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "15.9",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "19",
+        "Luftfeuchtigkeit....": "52",
+        "Windgeschwindigkeit..km.h.": "7.2",
+        "Index": "53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ROB",
+        "Name": "Poschiavo / Robbia",
+        "Höhe": "1078",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "20.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "22",
+        "Windgeschwindigkeit..km.h.": "23.4",
+        "Index": "43"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "PUY",
+        "Name": "Pully",
+        "Höhe": "455",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "21.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "13",
+        "Luftfeuchtigkeit....": "37",
+        "Windgeschwindigkeit..km.h.": "7.6",
+        "Index": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "QUI",
+        "Name": "Quinten",
+        "Höhe": "419",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "NA",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "NA",
+        "Windgeschwindigkeit..km.h.": "5.8",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ROE",
+        "Name": "Robièi",
+        "Höhe": "1896",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "13.4",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "5",
+        "Luftfeuchtigkeit....": "46",
+        "Windgeschwindigkeit..km.h.": "12.2",
+        "Index": "47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "RUE",
+        "Name": "Rünenberg",
+        "Höhe": "611",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "49",
+        "Windgeschwindigkeit..km.h.": "8.6",
+        "Index": "54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SBE",
+        "Name": "S. Bernardino",
+        "Höhe": "1638",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "12.7",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "3",
+        "Luftfeuchtigkeit....": "54",
+        "Windgeschwindigkeit..km.h.": "8.6",
+        "Index": "49"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "HAI",
+        "Name": "Salen-Reutenen",
+        "Höhe": "718",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17.2",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "3",
+        "Luftfeuchtigkeit....": "42",
+        "Windgeschwindigkeit..km.h.": "6.5",
+        "Index": "53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SAM",
+        "Name": "Samedan",
+        "Höhe": "1708",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "13.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "4",
+        "Luftfeuchtigkeit....": "40",
+        "Windgeschwindigkeit..km.h.": "15.1",
+        "Index": "44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SAG",
+        "Name": "Sattel, SZ",
+        "Höhe": "790",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "74",
+        "Windgeschwindigkeit..km.h.": "10.1",
+        "Index": "53"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SHA",
+        "Name": "Schaffhausen",
+        "Höhe": "438",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "9",
+        "Luftfeuchtigkeit....": "45",
+        "Windgeschwindigkeit..km.h.": "5.8",
+        "Index": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SRS",
+        "Name": "Schiers",
+        "Höhe": "626",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "68",
+        "Windgeschwindigkeit..km.h.": "3.2",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SCM",
+        "Name": "Schmerikon",
+        "Höhe": "408",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "NA",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "NA",
+        "Windgeschwindigkeit..km.h.": "2.5",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SPF",
+        "Name": "Schüpfheim",
+        "Höhe": "744",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "5",
+        "Luftfeuchtigkeit....": "55",
+        "Windgeschwindigkeit..km.h.": "1.8",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SCU",
+        "Name": "Scuol",
+        "Höhe": "1303",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.2",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "5",
+        "Luftfeuchtigkeit....": "45",
+        "Windgeschwindigkeit..km.h.": "11.9",
+        "Index": "47"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SIA",
+        "Name": "Segl-Maria",
+        "Höhe": "1804",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "10.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "48",
+        "Windgeschwindigkeit..km.h.": "6.1",
+        "Index": "48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SIM",
+        "Name": "Simplon-Dorf",
+        "Höhe": "1465",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "8",
+        "Luftfeuchtigkeit....": "40",
+        "Windgeschwindigkeit..km.h.": "22.3",
+        "Index": "44"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SIO",
+        "Name": "Sion",
+        "Höhe": "482",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "23.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "36",
+        "Windgeschwindigkeit..km.h.": "11.2",
+        "Index": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "PRE",
+        "Name": "St-Prex",
+        "Höhe": "425",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "NA",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "NA",
+        "Windgeschwindigkeit..km.h.": "14.4",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "STC",
+        "Name": "St. Chrischona",
+        "Höhe": "493",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "NA",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "15",
+        "Luftfeuchtigkeit....": "NA",
+        "Windgeschwindigkeit..km.h.": "NA",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "STG",
+        "Name": "St. Gallen",
+        "Höhe": "775",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "15.4",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "47",
+        "Windgeschwindigkeit..km.h.": "3.6",
+        "Index": "54"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SMM",
+        "Name": "Sta. Maria, Val Müstair",
+        "Höhe": "1386",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "16.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "34",
+        "Windgeschwindigkeit..km.h.": "7.6",
+        "Index": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SBO",
+        "Name": "Stabio",
+        "Höhe": "353",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "21",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "10",
+        "Luftfeuchtigkeit....": "75",
+        "Windgeschwindigkeit..km.h.": "2.5",
+        "Index": "64"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "STK",
+        "Name": "Steckborn",
+        "Höhe": "397",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "NA",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "NA",
+        "Windgeschwindigkeit..km.h.": "2.5",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SAE",
+        "Name": "Säntis",
+        "Höhe": "2502",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "3.9",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "5",
+        "Luftfeuchtigkeit....": "55",
+        "Windgeschwindigkeit..km.h.": "22.3",
+        "Index": "33"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "THU",
+        "Name": "Thun",
+        "Höhe": "570",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "19.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "56",
+        "Windgeschwindigkeit..km.h.": "6.5",
+        "Index": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "TIT",
+        "Name": "Titlis",
+        "Höhe": "3040",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "1.2",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "7",
+        "Luftfeuchtigkeit....": "83",
+        "Windgeschwindigkeit..km.h.": "19.8",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "UEB",
+        "Name": "Uetliberg",
+        "Höhe": "854",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "NA",
+        "Niederschlag..mm.": "NA",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "13",
+        "Luftfeuchtigkeit....": "NA",
+        "Windgeschwindigkeit..km.h.": "NA",
+        "Index": "NA"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ULR",
+        "Name": "Ulrichen",
+        "Höhe": "1345",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "15.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "61",
+        "Windgeschwindigkeit..km.h.": "14.8",
+        "Index": "49"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "VAD",
+        "Name": "Vaduz",
+        "Höhe": "457",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "9",
+        "Luftfeuchtigkeit....": "44",
+        "Windgeschwindigkeit..km.h.": "2.2",
+        "Index": "57"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "VAB",
+        "Name": "Valbella",
+        "Höhe": "1568",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "10.2",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "5",
+        "Luftfeuchtigkeit....": "79",
+        "Windgeschwindigkeit..km.h.": "11.9",
+        "Index": "49"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "VLS",
+        "Name": "Vals",
+        "Höhe": "1242",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "11.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "89",
+        "Windgeschwindigkeit..km.h.": "2.2",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "VEV",
+        "Name": "Vevey / Corseaux",
+        "Höhe": "405",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "23.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "8",
+        "Luftfeuchtigkeit....": "31",
+        "Windgeschwindigkeit..km.h.": "16.6",
+        "Index": "51"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "VIO",
+        "Name": "Vicosoprano",
+        "Höhe": "1089",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.6",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "8",
+        "Luftfeuchtigkeit....": "39",
+        "Windgeschwindigkeit..km.h.": "13",
+        "Index": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "VIT",
+        "Name": "Villars-Tiercelin",
+        "Höhe": "859",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "15.2",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "NA",
+        "Globalstrahlung..W.m.2.": "NA",
+        "Luftfeuchtigkeit....": "59",
+        "Windgeschwindigkeit..km.h.": "12.2",
+        "Index": "50"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "VIS",
+        "Name": "Visp",
+        "Höhe": "639",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "22",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "47",
+        "Windgeschwindigkeit..km.h.": "23.4",
+        "Index": "48"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "WFJ",
+        "Name": "Weissfluhjoch",
+        "Höhe": "2691",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "3.4",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "3",
+        "Luftfeuchtigkeit....": "85",
+        "Windgeschwindigkeit..km.h.": "15.5",
+        "Index": "42"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "WYN",
+        "Name": "Wynau",
+        "Höhe": "422",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.4",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "14",
+        "Luftfeuchtigkeit....": "58",
+        "Windgeschwindigkeit..km.h.": "2.2",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "WAE",
+        "Name": "Wädenswil",
+        "Höhe": "485",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.3",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "12",
+        "Luftfeuchtigkeit....": "53",
+        "Windgeschwindigkeit..km.h.": "2.5",
+        "Index": "58"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "PSI",
+        "Name": "Würenlingen / PSI",
+        "Höhe": "334",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "17.8",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "60",
+        "Windgeschwindigkeit..km.h.": "NA",
+        "Index": "45"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "ZER",
+        "Name": "Zermatt",
+        "Höhe": "1638",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "14.7",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "6",
+        "Luftfeuchtigkeit....": "52",
+        "Windgeschwindigkeit..km.h.": "2.2",
+        "Index": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "REH",
+        "Name": "Zürich / Affoltern",
+        "Höhe": "443",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.5",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "11",
+        "Luftfeuchtigkeit....": "51",
+        "Windgeschwindigkeit..km.h.": "0.7",
+        "Index": "59"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "SMA",
+        "Name": "Zürich / Fluntern",
+        "Höhe": "555",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.1",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "8",
+        "Luftfeuchtigkeit....": "44",
+        "Windgeschwindigkeit..km.h.": "5.8",
+        "Index": "55"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Station": "KLO",
+        "Name": "Zürich / Kloten",
+        "Höhe": "426",
+        "Time": "2019-07-10 21:10:00",
+        "Temperatur...C.": "18.9",
+        "Niederschlag..mm.": "0",
+        "Sonnenschein..min.": "0",
+        "Globalstrahlung..W.m.2.": "13",
+        "Luftfeuchtigkeit....": "52",
+        "Windgeschwindigkeit..km.h.": "7.2",
+        "Index": "56"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [710517,259824]
+      }
+    }
+  ]
+}
