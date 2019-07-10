@@ -109,6 +109,59 @@ read_meta_correctly <- function(path){
   return(data)
 }
 
+# Function which checks for summertime / wintertime correction
+# solutions found under stackoverflow
+# https://stackoverflow.com/questions/8879864/how-to-find-summertime-adjustment-for-a-given-date-and-timezone-in-r
+# TODO: handling times when clocks are set to winter / summer-times? Problem at 00:00 / 02:00 ?
+difference_to_UTC <- function(){
+  # timezone + current time
+  tz = Sys.timezone()
+  current_time = Sys.time()
+  
+  # UTC-time
+  utc <- as.POSIXct(format(current_time,  tz = 'UTC'),  tz = tz)
+  
+  
+  return(round(as.numeric(current_time - utc)))
+}
+
+# functions to split timestring
+get_year <-  function(timestring){
+  return(substr(timestring, 0, 4))
+}
+get_month <- function(timestring){
+  return(substr(timestring, 5, 6))
+}
+get_day <- function(timestring){
+  return(substr(timestring, 7, 8))
+}
+get_hour <- function(timestring){
+  return(substr(timestring, 9, 10))
+}
+get_minutes <- function(timestring){
+  return(substr(timestring, 11, 12))
+}
+get_date <- function(timestring){
+  return(substr(timestring, 0, 8))
+}
+get_time <- function(timestring){
+  return(substr(timestring, 9, 12))
+}
+
+# Function to adjust timestring for UTC
+localtime <- function(timestring){
+  #get UTC difference
+  utc_diff <- difference_to_UTC()
+  # adjust hour for difference
+  hour_adjusted <- as.character(as.numeric(get_hour(timestring)) + utc_diff)
+  
+  # Prepare date + adjusted time for POSIXct-format
+  date <- str_c(get_year(timestring), get_month(timestring), get_day(timestring), sep = "-")
+  time_adjusted <- str_c(hour_adjusted, get_minutes(timestring), "00", sep = ":")
+  
+  return(paste(date, time_adjusted, sep = " "))
+}
+
 ###################################################################################################
 # Section 1: Fetch newest measurements of the automated weather stations of MeteoSwiss + prepare for join
 
@@ -132,6 +185,11 @@ colnames(ms_data) <- cols_new
 # Subset required for Badewetter-Index
 subset_cols <- cols_new[c(1:7, 10)]
 badewetter_subset <- ms_data[, subset_cols]
+
+# Correct for UTC-time (summer: UTC+2, winter: UTC+1)
+time_adjusted <- localtime(badewetter_subset[1, "Time"])
+time_adjusted <- rep(time_adjusted, dim(badewetter_subset)[1])
+badewetter_subset[, "Time"] <- time_adjusted
 
 rm("cols_new", "cols_orig")
 ###################################################################################################
