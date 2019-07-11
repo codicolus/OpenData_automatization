@@ -10,6 +10,7 @@
 
 #libraries
 library(rjson)
+library(geojsonio)
 library(leafletR)
 
 ###################################################################################################
@@ -65,6 +66,9 @@ col_names <- colnames(badeindex_data)
 indizes <- get_indizes(c("Latitude", "Longitude", "Index"))
 index_subset <- badeindex_data[,indizes]
 
-# Convert file to GeoJSON  
-lat_lon <- get_indizes(c("Latitude", "Longitude"))
-toGeoJSON(badeindex_data, "badewetter", path, lat.lon = lat_lon, overwrite = T)
+
+
+
+
+
+

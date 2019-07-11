@@ -15,6 +15,35 @@
 
 # libraries / functions
 source("index_auxiliary.R")
+library(leafletR)
+
+###################################################################################################
+# Section 0: Auxiliary Functions
+
+# to add
+add_Name_CRS <- function(filepath, name, epsg){
+  # Read-in file
+  file <- readLines(filepath)
+  
+  # Determine at which position the FeatureCollection-statement occurs
+  at_which <- grep("*FeatureCollection*", file)
+  
+  # prepare new file with 2 added lines: name + CRS
+  new_file <- rep(NA, length(file)+2)
+  
+  # Prepare name + crs strings
+  name <- paste('  "name": ', paste("\"", name, "\"", sep = ""), ",", sep = "")
+  crs_string <- paste(paste('  "crs": {"type": "EPSG", "properties": {"code": ', as.character(epsg), sep = ""), "}},", 
+                 sep = "")
+  
+  # Insert new lines at correct positions
+  # TODO: correct file assignment
+  new_file[1:at_which] <- file[1:at_which]
+  new_file[at_which+3:length(new_file)] <- file[at_which+1:length(file)]
+  new_file[at_which+1] <- name
+  new_file[at_which+2] <- crs_string
+  writeLines(new_file, con=filepath)
+}
 
 ###################################################################################################
 # Section 1: Calculation of the Badewetter-Index
@@ -42,9 +71,8 @@ wind_max <- 25
 wind_wgt <- 0.15
 
 # Read-in data
-# TODO: Correct time to UTC+2 (summer) / UTC+1 (winter)
 joined_data <- read.csv(paste(path, "meteoswiss_data/weatherdata_joined.csv", sep = "/"), na.strings = "-", encoding = "ISO-8859-1", header = T, 
-                        check.names = T)
+                        check.names = F)
 
 # get dimensions r-rows, c-cols
 dims <- dim(joined_data)
@@ -77,7 +105,6 @@ for(i in 1:r){
 }
 
 # Possible Index-Range with given specifications for max-variables + weights
-# TODO: could / should be standardized such that values are always in the range 0-100
 #maxindex
 maxi <- temp_cont(temp_max, temp_wgt, temp_max) + prec_cont(0, prec_wgt) + sun_cont(sun_max, sun_wgt, sun_max) + 
   glob_cont(glob_max, glob_wgt, glob_max) + feu_cont(90, feu_wgt) + wind_cont(0, wind_wgt, wind_max)
@@ -101,13 +128,20 @@ col_names <- colnames(joined_data)
 ###################################################################################################
 # Section 2: WRITING END-PRODUCT FILES FOR USE IN QGIS
 
-# TODO: convert to GEOJSON here!?
-
 # Create directory
 dir.create(paste(path, "index", sep="/"), showWarnings = F)
 
 #Write csv
 write.csv(joined_data, paste(path, "index/badeindex.csv", sep = "/"), row.names = F, na = "-", fileEncoding = "ISO-8859-1")
+
+# Create GeoJSON from station data
+# Convert file to GeoJSON  
+lat_lon <- c(grep("Lat+", col_names), grep("Lon+", col_names))
+toGeoJSON(joined_data, "badewetter", path, lat.lon = lat_lon, overwrite = T)
+
+# Add name + CRS
+add_Name_CRS(paste(path, "badewetter2.geojson", sep = "/"), "badewetter", 21781)
+
 
 # Write csvt-file with type of each column (required for reading table in QGIS)
 if(!file.exists(paste(path, "index/badeindex.csvt", sep = "/"))){

@@ -109,6 +109,31 @@ read_meta_correctly <- function(path){
   return(data)
 }
 
+
+# function for preparing latitude longitude values
+# Latitude
+get_lon <- function(coords, splitchar){
+  return(as.numeric(str_split(coords, splitchar)[[1]][1]))
+}
+# Longitude
+get_lat <- function(coords, splitchar){
+  return(as.numeric(str_split(coords, splitchar)[[1]][2]))
+}
+
+get_coords_list <- function(coords, splitchar){
+  
+  nr_pairs <- dim(coords)[1]
+  
+  # Prepare for transforming coordinates
+  lonlat <- matrix(NA, nrow = nr_pairs, ncol = 2)
+  for(i in 1:nr_pairs){
+    lonlat[i,1] <- get_lon(coords[i,1], splitchar)
+    lonlat[i,2] <- get_lat(coords[i,1], splitchar)
+  }
+  
+  return(lonlat)
+}
+
 # Function which checks for summertime / wintertime correction
 # solutions found under stackoverflow
 # https://stackoverflow.com/questions/8879864/how-to-find-summertime-adjustment-for-a-given-date-and-timezone-in-r
@@ -218,10 +243,13 @@ if(!file.exists(paste(path, "meteoswiss_data/weather_metadata.csv", sep = "/")))
   # Read-in temporary-file
   meta_data <- read_meta_correctly(paste(path, "meteoswiss_data/temporary_meta.txt", sep = "/"))
   
+  # Longitude Latitude Preparation
+  lonlat <- get_coords_list(meta_data[,"Koordinaten"], "/")
+  
   # Tidy data
   meta_data <- meta_data %>% select(Station, Name, Koordinaten, Höhe) %>%
-    mutate(Longitude = as.numeric(str_split(Koordinaten, "/")[[1]][1]),
-           Latitude = as.numeric(str_split(Koordinaten, "/")[[1]][2])) %>%
+    mutate(Longitude = lonlat[,1],
+           Latitude = lonlat[,2]) %>%
       select(-Koordinaten)
   
   # write processed meta-data
@@ -230,7 +258,7 @@ if(!file.exists(paste(path, "meteoswiss_data/weather_metadata.csv", sep = "/")))
   # remove temporary file
   file.remove(paste(path, "meteoswiss_data/temporary_meta.txt", sep = "/"))
   
-  rm("lon_lats")
+  rm("lonlat")
   
 }else{
   meta_data <- read_csv(paste(path, "meteoswiss_data/weather_metadata.csv", sep = "/"), locale = locale(encoding = "ISO-8859-1"))
