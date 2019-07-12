@@ -23,26 +23,28 @@ library(leafletR)
 # to add
 add_Name_CRS <- function(filepath, name, epsg){
   # Read-in file
-  file <- readLines(filepath)
+  file <- as.matrix(readLines(filepath))
   
   # Determine at which position the FeatureCollection-statement occurs
   at_which <- grep("*FeatureCollection*", file)
   
   # prepare new file with 2 added lines: name + CRS
-  new_file <- rep(NA, length(file)+2)
+  new_file <- matrix(NA, nrow = dim(file)[1]+2, ncol = 1)
   
   # Prepare name + crs strings
-  name <- paste('  "name": ', paste("\"", name, "\"", sep = ""), ",", sep = "")
+  name_to_write <- paste('  "name": ', paste("\"", name, "\"", sep = ""), ",", sep = "")
   crs_string <- paste(paste('  "crs": {"type": "EPSG", "properties": {"code": ', as.character(epsg), sep = ""), "}},", 
                  sep = "")
   
   # Insert new lines at correct positions
   # TODO: correct file assignment
-  new_file[1:at_which] <- file[1:at_which]
-  new_file[at_which+3:length(new_file)] <- file[at_which+1:length(file)]
-  new_file[at_which+1] <- name
+  new_file[1:at_which,] <- file[1:at_which]
+  new_file[at_which+1] <- name_to_write
   new_file[at_which+2] <- crs_string
-  writeLines(new_file, con=filepath)
+  new_file[(at_which+3):length(new_file)] <- file[(at_which+1):length(file)]
+  #new_file <- new_file[1:(length(new_file)-2)]
+  #writeLines(new_file, con=filepath)
+  write(new_file, file = filepath)
 }
 
 ###################################################################################################
@@ -140,7 +142,7 @@ lat_lon <- c(grep("Lat+", col_names), grep("Lon+", col_names))
 toGeoJSON(joined_data, "badewetter", path, lat.lon = lat_lon, overwrite = T)
 
 # Add name + CRS
-add_Name_CRS(paste(path, "badewetter2.geojson", sep = "/"), "badewetter", 21781)
+add_Name_CRS(paste(path, "badewetter.geojson", sep = "/"), "badewetter", 21781)
 
 
 # Write csvt-file with type of each column (required for reading table in QGIS)

@@ -10,8 +10,6 @@
 
 #libraries
 library(rjson)
-library(geojsonio)
-library(leafletR)
 
 ###################################################################################################
 # Section 0: Auxiliary Functions
@@ -65,6 +63,7 @@ col_names <- colnames(badeindex_data)
 # subset columns for badewetter-index interpolation
 indizes <- get_indizes(c("Latitude", "Longitude", "Index"))
 index_subset <- badeindex_data[,indizes]
+
 
 
 
