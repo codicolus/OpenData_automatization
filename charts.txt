@@ -1,0 +1,3 @@
+swissALTI3D Hillshade (ch.swisstopo.swissalti3d-reliefschattierung)
+"ch.swisstopo.pixelkarte-grau"
+%&layers=ch.bafu.gefahren-basiskarte,ch.meteoschweiz.% paramID %&ch.meteoschweiz.%

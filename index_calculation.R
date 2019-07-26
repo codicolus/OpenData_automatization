@@ -6,6 +6,8 @@
 # Date: 08.07.2019
 # Licence: CC-BY-SA
 
+# TODO: If Badewetter-Index cannot be calculated at a specific station: interpolate between 3 nearest stations?
+
 ######## General Information ##########
 # This script executes 1 tasks:
 #   1) Calculation of the Badewetter-Index Schweiz (Swiss beach-weather index)
@@ -44,7 +46,8 @@ add_Name_CRS <- function(filepath, name, epsg){
   new_file[(at_which+3):length(new_file)] <- file[(at_which+1):length(file)]
   #new_file <- new_file[1:(length(new_file)-2)]
   #writeLines(new_file, con=filepath)
-  write(new_file, file = filepath)
+  #write(new_file, file = filepath)
+  return(new_file)
 }
 
 ###################################################################################################
@@ -141,9 +144,13 @@ write.csv(joined_data, paste(path, "index/badeindex.csv", sep = "/"), row.names 
 lat_lon <- c(grep("Lat+", col_names), grep("Lon+", col_names))
 toGeoJSON(joined_data, "badewetter", path, lat.lon = lat_lon, overwrite = T)
 
-# Add name + CRS
-add_Name_CRS(paste(path, "badewetter.geojson", sep = "/"), "badewetter", 21781)
+# Create MAP_RESOURCES_DIRECTORY
+dir.create(paste(path, "map_resources", sep="/"), showWarnings = F)
 
+# Add name + CRS
+correct_geojson <- add_Name_CRS(paste(path, "badewetter.geojson", sep = "/"), "badewetter", 21781)
+# Write GeoJSON-Badewetter-File
+write(correct_geojson, file = paste(path, "/map_resources/badewetter.geojson", sep = "/"))
 
 # Write csvt-file with type of each column (required for reading table in QGIS)
 if(!file.exists(paste(path, "index/badeindex.csvt", sep = "/"))){

@@ -180,6 +180,10 @@ localtime <- function(timestring){
   # adjust hour for difference
   hour_adjusted <- as.character(as.numeric(get_hour(timestring)) + utc_diff)
   
+  if(nchar(hour_adjusted) == 1){
+    hour_adjusted <- paste("0", hour_adjusted, sep = "")
+  }
+  
   # Prepare date + adjusted time for POSIXct-format
   date <- str_c(get_year(timestring), get_month(timestring), get_day(timestring), sep = "-")
   time_adjusted <- str_c(hour_adjusted, get_minutes(timestring), "00", sep = ":")

@@ -19,6 +19,7 @@ library(httr)
 library(XML)
 library(rjson)
 library(stringr)
+library(snow)
 
 ###################################################################################################
 # Section 0: Auxiliary Functions
@@ -82,40 +83,9 @@ scrape_metadata <- function(data_table){
   return(out)
 }
 
-
-###################################################################################################
-# Section 1: Fetching newest river- data
-# TODO: include river-temperatures in the interpolation of the badewetter-index too?
-# -->or just use the actual temperatures as additional conditon which the user could specify on its own
-# --> such that then the bade-index is alterd such that only regions are displayed where also the river/lake temperatures
-# are adequately for bathing
-
-# TODO: create an executable function out of the whole script
-# TODO: if running on Linux: coordination with BASH-Script preferable
-# Outfile
-path <- "data"
-
-# url
-file <- "http://data.geo.admin.ch/ch.bafu.hydroweb-messstationen_temperatur/ch.bafu.hydroweb-messstationen_temperatur_de.json"
-
-# read-in JSON-format
-rivers_json <- fromJSON(file=file, simplify = T) # TODO: really necessary to simplify?
-river_features <- rivers_json$features
-
-
-# Updated feature-list
-updated_features <- list()
-
-# Add Temperature and Metadata-Information for every feature in data-set
-# Loop over all features
-print("Feature data fetching initialised...")
-print(paste("Total features being processed:", length(river_features)))
-
-for (i in 1:length(river_features)){
-  
-  # get current feature
-  feature <- river_features[[i]]
-  
+# Function which updates feature
+# created for parallelization with lapply
+update_feature <- function(feature){
   # get current properties
   ft_props <- feature$properties
   # Get Web-URL
@@ -145,10 +115,55 @@ for (i in 1:length(river_features)){
   # Update features
   feature$properties <- ft_props
   
-  # add updated feature to new feature-list
-  updated_features[[i]] <- feature
+  return(feature)
   
 }
+
+
+###################################################################################################
+# Section 1: Fetching newest river- data
+# TODO: include river-temperatures in the interpolation of the badewetter-index too?
+# -->or just use the actual temperatures as additional conditon which the user could specify on its own
+# --> such that then the bade-index is alterd such that only regions are displayed where also the river/lake temperatures
+# are adequately for bathing
+
+# TODO: create an executable function out of the whole script
+# TODO: if running on Linux: coordination with BASH-Script preferable
+# Outfile
+path <- "data"
+
+# url
+file <- "http://data.geo.admin.ch/ch.bafu.hydroweb-messstationen_temperatur/ch.bafu.hydroweb-messstationen_temperatur_de.json"
+
+# read-in JSON-format
+rivers_json <- fromJSON(file=file, simplify = T) # TODO: really necessary to simplify?
+river_features <- rivers_json$features
+
+
+# Updated feature-list
+updated_features <- list()
+
+# Add Temperature and Metadata-Information for every feature in data-set
+# PARALLELIZED
+print("Feature data fetching initialised...")
+print(paste("Total features being processed:", length(river_features)))
+
+# CREATE CLUSTER WITH ALL AVAILABLE CORES
+cl<-makeCluster(parallel::detectCores(),type="SOCK")
+
+# Export all necessary functions
+clusterExport(cl=cl, list("extract_webURL", "htmlParse", "xpathApply", "scrape_time_temperature",
+                          "read_station_HTMLtable", "GET", "xmlRoot", "readHTMLTable", "str_extract",
+                          "scrape_metadata", "get_attributes_as_numeric"))
+
+# PARALLELIZATION + UPDATING FUNCTIONS
+system.time(
+  updated_features <- clusterApply(cl, river_features, update_feature)
+)
+# Stop Cluster
+stopCluster(cl)
+rm("cl")
+
 
 # replace features with updated ones
 rivers_json$features <- updated_features
