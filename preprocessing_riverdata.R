@@ -173,10 +173,12 @@ out_json <- toJSON(rivers_json)
 
 # TODO: could also be other data format
 
-# Create directory
+# Create directories
 dir.create(paste(path, "riverdata", sep="/"), showWarnings = F)
+dir.create(paste(path, "map_resources", sep="/"), showWarnings = F)
 
 # write Updated JSON
 write(out_json, file=paste(path, "riverdata/flussdaten_updated.json", sep = "/"))
+write(out_json, file=paste(path, "map_resources/flussdaten_updated.json", sep = "/"))
 
 rm(list=ls())
