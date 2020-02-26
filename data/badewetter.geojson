@@ -1,7 +1,5 @@
 {
   "type": "FeatureCollection",
-  "name": "badewetter",
-  "crs": {"type": "EPSG", "properties": {"code": 21781}},
   "features": [
     {
       "type": "Feature",
